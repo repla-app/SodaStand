@@ -1,0 +1,11 @@
+framework module MysteryCola {
+  umbrella header "MysteryCola.h"
+
+  export *
+  module * { export * }
+}
+
+module MysteryCola.Swift {
+    header "MysteryCola-Swift.h"
+    requires objc
+}
