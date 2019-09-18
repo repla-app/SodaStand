@@ -10,6 +10,7 @@
 		457995112332ACFA008D80E0 /* SodaStand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995072332ACFA008D80E0 /* SodaStand.framework */; };
 		457995162332ACFA008D80E0 /* SodaStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995152332ACFA008D80E0 /* SodaStandTests.swift */; };
 		457995182332ACFA008D80E0 /* SodaStand.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579950A2332ACFA008D80E0 /* SodaStand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457995222332B23B008D80E0 /* SodaStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995212332B23B008D80E0 /* SodaStand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		457995102332ACFA008D80E0 /* SodaStandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodaStandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		457995152332ACFA008D80E0 /* SodaStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStandTests.swift; sourceTree = "<group>"; };
 		457995172332ACFA008D80E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457995212332B23B008D80E0 /* SodaStand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				4579950A2332ACFA008D80E0 /* SodaStand.h */,
 				4579950B2332ACFA008D80E0 /* Info.plist */,
+				457995212332B23B008D80E0 /* SodaStand.swift */,
 			);
 			path = SodaStand;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					457995062332ACFA008D80E0 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					4579950F2332ACFA008D80E0 = {
 						CreatedOnToolsVersion = 10.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457995222332B23B008D80E0 /* SodaStand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		4579951C2332ACFA008D80E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robenkleene.SodaStand;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -365,6 +372,7 @@
 		4579951D2332ACFA008D80E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +398,7 @@
 		4579951F2332ACFA008D80E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SodaStandTests/Info.plist;
@@ -407,6 +416,7 @@
 		457995202332ACFA008D80E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SodaStandTests/Info.plist;
