@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import MysteryCola
 
 public class SodaStand {
-    public static let key = "test"
+    public static let key = MysteryCola.key
 }

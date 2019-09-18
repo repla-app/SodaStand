@@ -11,6 +11,8 @@
 		457995162332ACFA008D80E0 /* SodaStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995152332ACFA008D80E0 /* SodaStandTests.swift */; };
 		457995182332ACFA008D80E0 /* SodaStand.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579950A2332ACFA008D80E0 /* SodaStand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		457995222332B23B008D80E0 /* SodaStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995212332B23B008D80E0 /* SodaStand.swift */; };
+		457995582332DECF008D80E0 /* MysteryCola.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995572332DECF008D80E0 /* MysteryCola.framework */; };
+		4579955A2332DEE9008D80E0 /* MysteryCola.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 457995572332DECF008D80E0 /* MysteryCola.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		457995592332DEE0008D80E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4579955A2332DEE9008D80E0 /* MysteryCola.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		457995072332ACFA008D80E0 /* SodaStand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodaStand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4579950A2332ACFA008D80E0 /* SodaStand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SodaStand.h; sourceTree = "<group>"; };
@@ -31,6 +46,7 @@
 		457995152332ACFA008D80E0 /* SodaStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStandTests.swift; sourceTree = "<group>"; };
 		457995172332ACFA008D80E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457995212332B23B008D80E0 /* SodaStand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStand.swift; sourceTree = "<group>"; };
+		457995572332DECF008D80E0 /* MysteryCola.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MysteryCola.framework; path = Vendor/MysteryCola.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457995582332DECF008D80E0 /* MysteryCola.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +75,7 @@
 				457995092332ACFA008D80E0 /* SodaStand */,
 				457995142332ACFA008D80E0 /* SodaStandTests */,
 				457995082332ACFA008D80E0 /* Products */,
+				457995562332DECF008D80E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +107,14 @@
 			path = SodaStandTests;
 			sourceTree = "<group>";
 		};
+		457995562332DECF008D80E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				457995572332DECF008D80E0 /* MysteryCola.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,6 +137,7 @@
 				457995032332ACFA008D80E0 /* Sources */,
 				457995042332ACFA008D80E0 /* Frameworks */,
 				457995052332ACFA008D80E0 /* Resources */,
+				457995592332DEE0008D80E0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -353,6 +380,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SodaStand/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -380,6 +411,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SodaStand/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

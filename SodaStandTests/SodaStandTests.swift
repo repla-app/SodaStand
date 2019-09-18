@@ -11,6 +11,6 @@ import SodaStand
 
 class SodaStandTests: XCTestCase {
     func testKey() {
-        NSLog("\(#function) SodaStand.key \(String(describing: SodaStand.key))")
+        XCTAssertNotNil(SodaStand.key)
     }
 }
