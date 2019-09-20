@@ -11,8 +11,9 @@
 		457995162332ACFA008D80E0 /* SodaStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995152332ACFA008D80E0 /* SodaStandTests.swift */; };
 		457995182332ACFA008D80E0 /* SodaStand.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579950A2332ACFA008D80E0 /* SodaStand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		457995222332B23B008D80E0 /* SodaStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457995212332B23B008D80E0 /* SodaStand.swift */; };
-		457995582332DECF008D80E0 /* MysteryCola.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995572332DECF008D80E0 /* MysteryCola.framework */; };
-		4579955A2332DEE9008D80E0 /* MysteryCola.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 457995572332DECF008D80E0 /* MysteryCola.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		457995662334512F008D80E0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995632334512F008D80E0 /* AppCenterCrashes.framework */; };
+		457995672334512F008D80E0 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995642334512F008D80E0 /* AppCenter.framework */; };
+		457995682334512F008D80E0 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457995652334512F008D80E0 /* AppCenterAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4579955A2332DEE9008D80E0 /* MysteryCola.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +46,9 @@
 		457995152332ACFA008D80E0 /* SodaStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStandTests.swift; sourceTree = "<group>"; };
 		457995172332ACFA008D80E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457995212332B23B008D80E0 /* SodaStand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodaStand.swift; sourceTree = "<group>"; };
-		457995572332DECF008D80E0 /* MysteryCola.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MysteryCola.framework; path = Vendor/MysteryCola.framework; sourceTree = "<group>"; };
+		457995632334512F008D80E0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = Vendor/AppCenterCrashes.framework; sourceTree = "<group>"; };
+		457995642334512F008D80E0 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = Vendor/AppCenter.framework; sourceTree = "<group>"; };
+		457995652334512F008D80E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = Vendor/AppCenterAnalytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457995582332DECF008D80E0 /* MysteryCola.framework in Frameworks */,
+				457995662334512F008D80E0 /* AppCenterCrashes.framework in Frameworks */,
+				457995672334512F008D80E0 /* AppCenter.framework in Frameworks */,
+				457995682334512F008D80E0 /* AppCenterAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +114,9 @@
 		457995562332DECF008D80E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				457995572332DECF008D80E0 /* MysteryCola.framework */,
+				457995642334512F008D80E0 /* AppCenter.framework */,
+				457995652334512F008D80E0 /* AppCenterAnalytics.framework */,
+				457995632334512F008D80E0 /* AppCenterCrashes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

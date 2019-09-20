@@ -7,8 +7,12 @@
 //
 
 import Foundation
-import MysteryCola
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 public class SodaStand {
-    public static let key = MysteryCola.key
+    public class func start(_ secret: String) {
+        MSAppCenter.start(secret, withServices: [MSAnalytics.self, MSCrashes.self])
+    }
 }

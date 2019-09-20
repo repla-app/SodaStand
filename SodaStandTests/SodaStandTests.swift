@@ -9,8 +9,4 @@
 import XCTest
 import SodaStand
 
-class SodaStandTests: XCTestCase {
-    func testKey() {
-        XCTAssertNotNil(SodaStand.key)
-    }
-}
+class SodaStandTests: XCTestCase { }
