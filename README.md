@@ -1,1 +1,1 @@
-# `SodaStand` [![Build Status](https://travis-ci.org/repla-app/SodaStand.svg?branch=master)](https://travis-ci.org/repla-app/SodaStand)
+# `SodaStand` ![Status](https://github.com/repla-app/sodastand/actions/workflows/ci.yml/badge.svg) ![Status](https://github.com/repla-app/sodastand/actions/workflows/release.yml/badge.svg)
